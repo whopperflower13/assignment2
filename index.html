@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>
+        My first website.
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        
+</head>
+
+<body style="background-color:lightcyan">
+    <h1 style="font-family:sans-serif;">
+        <!--
+This is a heading
+        
+    </h1>
+    <img src="img/cinnamoroll.png" width="200" height="100">
+    <h2>
+        this is a cinnamoroll saying hi!
+        </h2>
+        <p>
+            this is a paragraph<br>
+        -->
+        
+
+
+        </p>
+        <div class="row">
+            <div class="image-container"><img id="donut1" src="img/donut_01.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="donut2" src="img/donut_02.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="donut3" src="img/donut_03.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon1" src="img/matcha.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="icon2" src="img/milktea.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="icon3" src="img/tea.png" height="200" width="200"/></div>
+        </div>
+
+        <script>
+            var sound1 = new buzz.sound("sound/water.mp3");
+            var sound2 = new buzz.sound("sound/crunch.mp3");
+            var sound3 = new buzz.sound("sound/metal.mp3");
+            var sound4 = new buzz.sound("sound/water.mp3");
+            var sound5 = new buzz.sound("sound/crunch.mp3");
+            var sound6 = new buzz.sound("sound/metal.mp3");
+     
+            window.onload = function() {
+                document.getElementById('donut1').addEventListener('mouseover', function () {sound1.play(); });  
+                document.getElementById('donut2').addEventListener('mouseover', function () {sound2.play(); });
+                document.getElementById('donut3').addEventListener('mouseover', function () {sound3.play(); });
+                document.getElementById('icon1').addEventListener('mouseover', function () {sound4.play(); });
+                document.getElementById('icon2').addEventListener('mouseover', function () {sound5.play(); }); 
+                document.getElementById('icon3').addEventListener('mouseover', function () {sound6.play(); }); 
+                   }  
+        </script>   
+</body>
+</html>
